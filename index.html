@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -131,37 +133,60 @@
         </section>
 
 <!--Section Works-->
-        <section class="section section-work">
-            <div class="container">
-            <h2 class="title">What are we doing</h2>
-            <ul class="card-set list works-list">
-                <li class="card-set-item">
-                    <img 
-                    srcset="
-                    ./images/main-page/img1.jpg 1x,
-                    ./images/main-page/img1@2x.jpg 2x
-                    "
-                    src="./images/main-page/img1.jpg" alt="Computer" width="360" height="300" loading="lazy"/>
-                </li>
-                <li class="card-set-item">
-                    <img
-                    srcset="
-                    ./images/main-page/img2.jpg 1x,
-                    ./images/main-page/img2@2x.jpg 2x
-                    "
-                    src="./images/main-page/img2.jpg" alt="Mobile phone" width="360" height="300" loading="lazy"/>
-                </li>
-                <li class="card-set-item">
-                    <img
-                    srcset="
-                    ./images/main-page/img3.jpg 1x,
-                    ./images/main-page/img3@2x.jpg 2x
-                    "
-                    src="./images/main-page/img3.jpg" alt="Laptop" width="360" height="300" loading="lazy"/>
-                </li>
-            </ul>
-        </div>
-        </section>
+                
+        <section class="section section-works">
+           
+                <div class="wrapper">
+                    <h2 class="title">What are we doing</h2>
+                    <div class="image-slider swiper-container">
+                        <div class="image-slider_wrapper swiper-wrapper">
+                            <div class="image-slider_slide swiper-slide">
+                                <div class="image-slider_image">
+                                    <img                  
+                                    src="./images/main-page/img1.jpg" alt="Computer"  />
+                                </div>        
+                            </div>    
+
+                            <div class="image-slider_slide swiper-slide">
+                                <div class="image-slider_image">
+                                    <img                  
+                                    src="./images/main-page/img2.jpg" alt="Computer" />
+                                </div>        
+                            </div>  
+
+                            <div class="image-slider_slide swiper-slide">
+                                <div class="image-slider_image">
+                                    <img                  
+                                    src="./images/main-page/img3.jpg" alt="Computer" />
+                                </div>        
+                            </div> 
+
+                            <div class="image-slider_slide swiper-slide">
+                                <div class="image-slider_image">
+                                    <img                  
+                                    src="./images/main-page/img1.jpg" alt="Computer"  />
+                                </div>        
+                            </div> 
+
+                            <div class="image-slider_slide swiper-slide">
+                                <div class="image-slider_image">
+                                    <img                  
+                                    src="./images/main-page/img2.jpg" alt="Computer"  />
+                                </div>        
+                            </div>             
+                                                                        
+                        </div>
+                        <div class="swiper-pagination"></div>   
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>   
+                        
+                       
+                </div>      
+            </div>
+       
+    </section>            
+          
+    
     
 <!--Section Our Team-->
         <section class="section section-team">
@@ -597,5 +622,7 @@
     crossorigin="anonymous"></script>
 
 <script src="./js/mobile-menu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/slider.js"></script>
 </body>
 </html>

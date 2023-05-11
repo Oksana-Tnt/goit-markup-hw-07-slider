@@ -852,26 +852,34 @@ textarea {
   | Section Works
   |============================
 */
+.section-works {    
 
-@media screen and (min-width: 1158px) {
-    .section-work {
-        padding-top: 0;
-        }
-}
+    padding-top: 0;       
+ }
 
+.wrapper {
     
-@media screen and (max-width: 1157px) {
-    .section-work {
-        display: none;
-        
-     }
-}
+    padding: 30px;
+    min-height: 100%;
+    overflow: hidden;      
+ }
 
-@media screen and (min-width: 1157px) {
-    .works-list {
-        --items: 3;
-     }
-}
+.image-slider {
+    position: relative;
+    padding: 30px 0 70px 0;      
+ }
+
+.image-slider_image {    
+
+    text-align: center;       
+ }
+
+ .image-slider_image img {    
+
+    max-width: 100%;  
+    margin: 0 auto;
+ }
+
 
 /**
   |============================
