@@ -70,7 +70,7 @@
          <section class="hero">
             
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button type="button" class="button primary" data-modal-open>Order Service</button>
+            <button type="button" class="button primary" data-modal-open="modal-1">Order Service</button>
            
         </section>
 <!--Section Features-->
@@ -482,7 +482,7 @@
                 <p class="subscribe-label">Subscribe</p>
                 <input type="email" class="subscribe-input" placeholder="E-mail"> 
             </div>
-            <button type="submit" class="button btn-subscribe">
+            <button class="button btn-subscribe" type="button" data-modal-open="modal-2">
                 Subscribe
                 <svg width="24" height="24">
                     <use href="./images/icon.svg#icon-subscribe"></use>
@@ -493,7 +493,7 @@
 </footer>
 
 <!--Modal wiev-->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal="modal-1">
         <div class="modal">
             <button class="btn-close" data-modal-close>
                 <svg width="8" height="8" class="icon-close">
@@ -549,6 +549,20 @@
             </form>
 
                        
+        </div>
+    </div>
+
+
+    <div class="backdrop" data-modal="modal-2">
+        <div class="modal">
+            <button class="btn-close" type="button" data-modal-close>
+                <svg width="8" height="8" class="icon-close">
+                    <use href="./images/icon.svg#icon-close-button"></use>               
+                </svg>
+            </button>    
+          
+          <h2 class="title">Thank you</h2>
+            <p class="team-subtitle"> thanks for subscribing </p>
         </div>
     </div>
 

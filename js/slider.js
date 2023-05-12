@@ -6,6 +6,9 @@ new Swiper('.image-slider', {
     
      pagination: {
         el: '.swiper-pagination',
-        clickable: true,    
+        clickable: true, 
+        dynamicBullets: true,   
      },
+
+    
  }) ;
